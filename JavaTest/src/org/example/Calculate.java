@@ -25,17 +25,18 @@ public class Calculate {
 
     //곱셈
     public int multiply(int a, int b) {
+
+        return a * b;
+    }
+
+    //나눗셈
+    public int divide(int a, int b) {
         //조건 추가
         if(b==0){
             do{
                 setB(b);
             }while(b!=0);
         }
-        return a * b;
-    }
-
-    //나눗셈
-    public int divide(int a, int b) {
         return a / b;
     }
 
@@ -54,6 +55,6 @@ public class Calculate {
     //git checkout -b feature/calculate
     //git add .
     //git commit -m "feat: ~~"
-    //git push java feature/calculate
+    //git push origin feature
     //git hub 화면에서 pull request 생성
 }
