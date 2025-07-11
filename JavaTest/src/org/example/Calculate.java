@@ -25,6 +25,12 @@ public class Calculate {
 
     //곱셈
     public int multiply(int a, int b) {
+        //조건 추가
+        if(b==0){
+            do{
+                setB(b);
+            }while(b!=0);
+        }
         return a * b;
     }
 
